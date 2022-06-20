@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книга плюс</title>
+    <link rel="stylesheet" href="../css/style_aut.css">
+</head>
+<body>
+    <div class="oder">
+        <?php
+        $id = $_REQUEST['post_id'];
+        $db = new PDO('mysql:host=localhost; dbname=biblioteka', "root", "");
+        $rs = $db->query("SELECT * FROM katalog WHERE id='$id'")->fetch();
+        $img = $rs['img'];
+        $book_name = $rs['nazvanie'];
+        $autor = $rs['autor'];
+        $god = $rs['god'];
+        $kolvo = $rs['kolvo'];
+        $opis = $rs['opisanie'];
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$img."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='1'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$book_name."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='2'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$autor."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='3'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$god."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='4'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$kolvo."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='5'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<form class='forma_don_red' action='../php/red_kniga.php'>";
+                echo"<input class='dob file' name='pole' type='text' placeholder='".$opis."'>";
+                echo"<button class='dob'>СОХРАНИТЬ</button>";
+                echo "<input type='hidden' name='sess_id' value='6'>";
+                echo "<input type='hidden' name='post_id' value='".$rs["id"]."'>";
+            echo"</form>";
+            echo"<button class='dob w_dob'><a href='../php/str/catalog.php'>НАЗАД</a></button>";
+        ?>
+            
+    </div>
+</body>
+</html>

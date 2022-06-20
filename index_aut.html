@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_aut.css">
+    <script src="js/animations.js"></script>
+    <title>МБУК БИМЦ Библиотека №4</title>
+
+    <script>
+        function Menu_Ani()
+        {
+            $(this).hide();
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="sourse/img/logo.png">
+            <h1 class="header_text">МБУК БИМЦ ОДИНЦОВСКАЯ БИБЛИОТЕКА №4</h1>
+            <h3 class="hello">Приветствую вас, <?php session_start(); echo $_SESSION['name']?></h3>
+        </header>
+        <main>
+            <menu>
+               <ul class="menu">
+                    <li class="menu_statick">
+                        <a href="index_aut.html"><img class="menu_img" src="sourse/img/Главная.png"></a>
+                    </li>
+                    <li class="menu_statick">
+                        <a href="php/str/news.php"><img class="menu_img" src="sourse/img/Новостная лента.png"></a>
+                    </li>
+                    <li class="menu_statick">
+                        <img class="menu_img" src="sourse/img/menu.png" onClick="popupWin = window.close();">
+                    </li>
+                    <li class="autor_users">
+                        <a href="php/str/LK.php"><img class="menu_img" src="sourse/img/Личный кабинет.png"></a>
+                    </li>
+                    <li class="autor_users">
+                        <a href="php/str/catalog.php"><img class="menu_img" src="sourse/img/Каталог.png"></a>
+                    </li>
+               </ul>
+            </menu>
+            <div class="telo">
+                <p>Наша библиотека семейного типа №4 доступна и взрослым и детям. Ждем вас в любое время."</p>
+            </div>
+            <div class="telo">
+                <p>Наши сотрудники:</p>
+                <p>Оксана Николаевна - директор библиотеки</p>
+                <p>Леднева Анна Николаевна  - библиотекарь</p>
+            </div>
+            <div class="telo">
+                <p>http://www.ogbic.ru/fam-library4</p>
+                <p>Комсомольская, 20, Одинцово</p>
+                <p>8(495)593-05-34 - взрослое отделение</p>
+                <p>8(495)593-43-05 - детское отделение</p>
+            </div>
+            <div class="telo">
+                <p><a class="dg-widget-link" href="http://2gis.ru/moscow/firm/4504127908452676/center/37.293483,55.666071/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Москвы</a><div class="dg-widget-link"><a href="http://2gis.ru/moscow/firm/4504127908452676/photos/4504127908452676/center/37.293483,55.666071/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/moscow/center/37.293483,55.666071/zoom/16/routeTab/rsType/bus/to/37.293483,55.666071╎Библиотека семейного типа №4?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Библиотека семейного типа №4</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":700,"height":600,"borderColor":"#a3a3a3","pos":{"lat":55.666071,"lon":37.293483,"zoom":16},"opt":{"city":"moscow"},"org":[{"id":"4504127908452676"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript></p>
+            </div>
+        </main>
+        <footer>
+            <h5 class="footer_text">Работа выполнена Пронько Лидей ИС-18</h5>
+        </footer>
+    </div>   
+</body>
+</html>

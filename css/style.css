@@ -1,0 +1,184 @@
+@font-face 
+{
+    font-family: Seminaria; /* Имя шрифта */
+    src: url(../sourse/fonts/Seminaria.ttf); /* Путь к файлу со шрифтом */
+}
+
+input, button
+{
+    font-family: Seminaria;
+}
+html, body
+{
+    margin: 0;
+    height: 100%;
+    font-family: Seminaria;
+    background-color: lightgoldenrodyellow;
+}
+.wrapper
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main
+{
+    flex: 1 1 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.telo
+{
+    margin: 5%;
+    background-color: coral;
+    border-radius: 5vh;
+    min-height: 20vh;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.form_news
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+header
+{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    z-index: 1;
+    height: 11vh;
+}
+.logo
+{
+    height: 7vh;
+    margin: 2vh;
+    margin-left: 21vh;
+}
+.header_text
+{
+    margin-top: 2vh;
+    margin-left: 10vh;
+}
+footer
+{
+    background-color: burlywood;
+    height: 5vh;
+}
+.footer_text
+{
+    margin-top: 1vh;
+}
+ul, li
+{
+    list-style: none;
+}
+.menu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+}
+.menu_img
+{
+    position: relative;
+    margin-top: -7.5vh;
+    height: 15vh;
+    width: 20vh;  
+}
+a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+.autor_users
+{
+    visibility: hidden;
+    cursor: default;
+}
+.menu_statick
+{
+    cursor: pointer;
+}
+.oder
+{
+    margin: 5%;
+    padding: 5%;
+    background-color: coral;
+    border-radius: 10vh;
+    min-height: 50vh;
+
+}
+.form_autor
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.form_reg
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.chek
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 5vh;
+}
+.chek_kadr
+{
+    margin-left: 25vh;
+}
+.pole_autor, .but_autor, .pole_reg, .but_reg
+{
+    border-radius: 10vh;
+}
+.but_reg, .but_autor
+{
+    width: 100%;
+}
+.bron_users
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.knopki
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.kniga_img
+{
+    height: 27vh;
+    width: 17vh;
+    border-radius: 4vh;
+    margin-top: 2.2vh;
+}
+.kniga_text
+{
+    border-radius: 4vh;
+    background-color: whitesmoke;
+    margin-left: -10vh;
+    margin-right: 2vh;
+    padding: 3%;
+    height: 27vh;
+}
+.h1_lk
+{
+    margin-top: 5%;
+    margin-bottom: -3%;
+}
+.time
+{
+    border-radius: 10vh;
+    height: 7vh;
+    margin-top: 8%;
+}
+.but_otm
+{
+    border-radius: 10vh;
+    height: 7vh;
+    margin-top: -28%;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="oder">
+        <form class="form_autor" action="../php/autoriz.php">
+            <input class="pole_autor" name="log" type="text" placeholder="ЛОГИН">
+            <input class="pole_autor" name="pass" type="password" placeholder="ПАРОЛЬ">
+            <button class="but_autor" onclick="windows.close();">ВОЙТИ</button>
+        </form>
+        <button class="but_autor" onclick="popupWin = window.open('../html/registr.html', 'contacts', 'location,width=600,height=400,top=0'); popupWin.focus(); return false;">РЕГИСТРАЦИЯ</button>
+        <button class="but_autor"><a href="../index.html">НАЗАД</a></button>
+    </div>
+</body>
+</html>
